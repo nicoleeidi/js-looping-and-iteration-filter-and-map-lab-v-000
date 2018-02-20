@@ -20,5 +20,5 @@ function exactMatch(driver,object){ //returned no matched
 }
 function exactMatchToList(driver,object){
   filteredDriver= driver.filter(function(person){return person.name== object.name || person.revenue == object.name})
-  return filteredDriver.map(function(person){return })
+  return filteredDriver.map(function(person){return person.name})
 }
