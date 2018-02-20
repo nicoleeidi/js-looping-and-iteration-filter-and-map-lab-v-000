@@ -13,7 +13,7 @@ or
 function exactMatch(driver,object){ //retuned 2 matches
   return driver.filter(function(person){
     if (driver.name == object.name || driver.reveue== object.revenue){
-      return driver
+      return person
     }
   })
 }
