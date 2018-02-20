@@ -10,13 +10,13 @@ or
 // function driverNamesWithRevenueOver(driver,revenue){
 //   return driversWithRevenueOrder(driver,revenue).map(function(person){return person[name]})
 // }
-function exactMatch(driver,object){ //retuned 2 matches
-  return driver.filter(function(person){
-    if (person.name == object.name || person.reveue== object.revenue){
-      return person
-    }
-  })
-}
+// function exactMatch(driver,object){ //retuned 2 matches
+//   return driver.filter(function(person){
+//     if (person.name == object.name || person.reveue== object.revenue){
+//       return person
+//     }
+//   })
+// }
 or
 function exactMatch(driver,object){ //returned no matched
   return driver.filter(function(person){return person.name== object.name || person.revenue == object.name})
