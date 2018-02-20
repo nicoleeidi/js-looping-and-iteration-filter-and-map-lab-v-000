@@ -16,9 +16,9 @@ function driverNamesWithRevenueOver(driver,amount){ //returns an array of the dr
 // }
 
 function exactMatch(driver,object){ //returned no matched
-  return driver.filter(function(person){return person.name== object.name || person.revenue == object.name})
+  return driver.filter(function(person){return person.name== object.name || person.revenue == object.revenue})
 }
 function exactMatchToList(driver,object){
-  filteredDriver= driver.filter(function(person){return person.name== object.name || person.revenue == object.name})
+  filteredDriver= driver.filter(function(person){return person.name== object.name || person.revenue == object.revenue})
   return filteredDriver.map(function(person){return person.name})
 }
