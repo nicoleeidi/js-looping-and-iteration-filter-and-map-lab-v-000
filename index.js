@@ -19,5 +19,5 @@ function exactMatch(driver,object){ //retuned 2 matches
 }
 or
 function exactMatch(driver,object){ //returned no matched
-  return driver.filter(function(person){return person.name== object || person.revenue == object})
+  return driver.filter(function(person){return person.name== object.name || person.revenue == object.name})
 }
