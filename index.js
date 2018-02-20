@@ -1,9 +1,9 @@
 // Code your solution here:
-function driversWithRevenueOver(driver,revenue){
-  return newDriver= driver.filter(function(person){return person.revenue > revenue})
+function driversWithRevenueOver(driver,amount){
+  return newDriver= driver.filter(function(person){return person.revenue > amount})
 }
-function driverNamesWithRevenueOver(driver,revenue){ //returns an array of the drivers who match it
-   names=driver.filter(function(person){return person.revenue > revenue})
+function driverNamesWithRevenueOver(driver,amount){ //returns an array of the drivers who match it
+   names=driver.filter(function(person){return person.revenue > amount})
    return names.map(function(person){return person.name})
 }
 
